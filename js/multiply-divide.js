@@ -1,9 +1,6 @@
 "use strict";
-var firstNum = 0;
-var secondNum = 0;
 function multiply() {
-    return firstNum * secondNum;
+    var input = document.getElementById("firtsNum");
 }
 function divide() {
-    return firstNum / secondNum;
 }

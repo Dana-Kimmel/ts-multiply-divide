@@ -1,10 +1,10 @@
-let firstNum = 0;
-let secondNum = 0;
+
 
 function multiply() {
-   return firstNum * secondNum;
+let input = document.getElementById("firtsNum") as HTMLInputElement;
 }
 
 function divide() {
-  return firstNum / secondNum;
+  
 }
+

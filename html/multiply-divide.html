@@ -11,16 +11,31 @@
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
+
+    <link href="multiply-divide.css" rel="stylesheet" />
+      
+    
   </head>
 
   <body>
-    <label for="firstNum">1st Number:</label>
-    <input type="text" id="firstNum" name="firstNum" /><br />
-    <label for="secondNum">2nd Number:</label>
-    <input type="text" id="secondNum" name="secondNum" /><br />
-    <button onclick="multiply()">Multiply</button>
-    <button onclick="divide()">Divide</button><br />
-    <p>The Result is :  <br> 
-    </p>
+    <div class="form-div">
+
+
+        <div class="form-group row">
+            <label for="firstNum" class="col-sm-4 col-form-label">1st Number</label>
+            <div class="col-sm-8"><input class="form-control" type="number" id="firstNum">
+                    </div>
+        </div>
+        <div class="form-group row">
+            <label for="secondNum" class="col-sm-4 col-form-label">2nd Number</label>
+            <div class="col-sm-8"><input class="form-control" type="number" id="secondNum"
+                    ></div>
+
+                    <div class="d-grid gap-2 d-md-block">
+                        <button class="btn btn-primary" onclick="multiply()" type="button">Multipy</button>
+                        <button class="btn btn-primary" onclick="divide()" type="button">Divide</button>
+                      </div>
+                      <h2>The Result is:  <span id="result"></span></h2>           
+        </div>
   </body>
 </html>
